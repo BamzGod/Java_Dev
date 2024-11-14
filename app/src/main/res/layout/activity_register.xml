@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_arrow_foreground"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="10dp"
+            android:text="REGISTER"
+            android:textColor="@color/darkgreen"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-30dp"
+        tools:layout_editor_absoluteY="62dp">
+
+        <LinearLayout
+            android:id="@+id/l"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="39dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="20dp"
+                android:text="BVN"
+                android:textColor="@color/darkgreen"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EdBvn"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_edittext2"
+                android:hint="Input Customer BVN"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textColor="@color/darkgreen"
+                android:textColorHint="@color/darkgreen"
+                android:textCursorDrawable="@drawable/cursor_color" />
+
+
+            <TextView
+                android:id="@+id/tvFirstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EdBvn"
+                android:layout_marginTop="5dp"
+                android:enabled="false"
+
+                android:paddingStart="5dp"
+                android:paddingEnd="20dp"
+                android:text="Firstname"
+                android:textColor="@color/darkgreen"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Edfirstname"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_edittext2"
+                android:hint="your fistname"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="@color/darkgreen"
+                android:textColorHint="@color/darkgreen"
+                android:textCursorDrawable="@drawable/cursor_color" />
+
+
+            <TextView
+                android:id="@+id/tvLastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Edfirstname"
+                android:layout_marginTop="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="20dp"
+                android:text="Lastname"
+                android:textColor="@color/darkgreen"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Edlastname"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_edittext2"
+
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="@color/darkgreen"
+                android:textColorHint="@color/darkgreen"
+                android:textCursorDrawable="@drawable/cursor_color" />
+
+            <TextView
+                android:id="@+id/tvMiddleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EdmiddleName"
+                android:layout_marginTop="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="20dp"
+                android:text="Middle name"
+                android:textColor="@color/darkgreen"
+                android:textSize="18sp"
+
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EdmiddleName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_edittext2"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/darkgreen"
+                android:textColorHint="@color/darkgreen"
+                android:textCursorDrawable="@drawable/cursor_color" />
+
+            <TextView
+                android:id="@+id/tvDob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edDob3"
+                android:layout_marginTop="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="20dp"
+                android:text="Date of Birth"
+                android:textColor="@color/darkgreen"
+                android:textSize="18sp"
+
+                />
+
+            <Button
+                android:id="@+id/btnDob"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_edittext2"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text="Click to Select Date"
+                android:textColor="@color/darkgreen"
+                android:textColorHint="@color/darkgreen"
+                android:textCursorDrawable="@drawable/cursor_color" />
+
+
+            <TextView
+                android:id="@+id/tvphoneNum3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Edaddress"
+                android:layout_marginTop="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="20dp"
+                android:text="Phone number"
+                android:textColor="@color/darkgreen"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EdphoneNum"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_edittext2"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textColor="@color/darkgreen"
+                android:textColorHint="@color/darkgreen"
+                android:textCursorDrawable="@drawable/cursor_color" />
+
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="20dp"
+                android:text="Gender"
+                android:textColor="@color/darkgreen"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TxtGender"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="Gender"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:textColor="@color/darkgreen"
+                android:textColorHint="@color/darkgreen">
+
+                <AutoCompleteTextView
+                    android:id="@+id/GenderAutoCompleteTextview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Edaddress"
+                android:layout_marginTop="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="20dp"
+                android:text="Address"
+                android:textColor="@color/darkgreen"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Edaddress"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_edittext2"
+                android:hint="Customer house address"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/darkgreen"
+                android:textColorHint="@color/darkgreen"
+                android:textCursorDrawable="@drawable/cursor_color" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTown"
+                android:layout_marginTop="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="20dp"
+                android:text="Town"
+                android:textColor="@color/darkgreen"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Edtown"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_edittext2"
+                android:hint="Customer town of residence"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/darkgreen"
+                android:textColorHint="@color/darkgreen"
+                android:textCursorDrawable="@drawable/cursor_color" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvcity"
+                android:layout_marginTop="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="20dp"
+                android:text="City"
+                android:textColor="@color/darkgreen"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Edcity"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_edittext2"
+                android:hint="City"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@color/darkgreen"
+                android:textColorHint="@color/darkgreen"
+                android:textCursorDrawable="@drawable/cursor_color" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TxtStateOfOrigin"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="State of Origin"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:textColor="@color/darkgreen"
+                android:textColorHint="@color/darkgreen">
+
+                <AutoCompleteTextView
+                    android:id="@+id/stateAutoCompleteTextview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TxtMaritalStatus"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="Marital Status"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:textColor="@color/darkgreen"
+                android:textColorHint="@color/darkgreen">
+
+                <AutoCompleteTextView
+                    android:id="@+id/MaritalAutoCompleteTextview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TxtBranch"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="Bank Branch"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:textColor="@color/darkgreen"
+                android:textColorHint="@color/darkgreen">
+
+                <AutoCompleteTextView
+                    android:id="@+id/BranchAutoCompleteTextview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TxtAccountType"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="Account Type"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:textColor="@color/darkgreen"
+                android:textColorHint="@color/darkgreen">
+
+                <AutoCompleteTextView
+                    android:id="@+id/AccountTypeAutoCompleteTextview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCreateAccount"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/darkgreen"
+                android:fontFamily="sans-serif-medium"
+                android:text="CREATE ACCOUNT"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

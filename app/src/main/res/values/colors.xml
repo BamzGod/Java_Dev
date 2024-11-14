@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <color name="black">#FF000000</color>
+        <color name="Fuchsia">#FF00FF</color>
+        <color name="Teal">#008080</color>
+        <color name="Olive">#808000</color>
+        <color name="Maroon">#800000</color>
+        <color name="Aqua">#00FFFF</color>
+        <color name="white">#FFFFFFFF</color>
+        <color name="salmon">#FA8072</color>
+        <color name="light_gray">#999999</color>
+        <color name="red">#FF0000</color>
+        <color name="green">#00FF00</color>
+        <color name="blue">#0000FF</color>
+        <color name="dark_gray">#454545</color>
+        <color name="orange">#FF5733</color>
+        <color name="silver">#C0C0C0</color>
+        <color name="maroon">#800000</color>
+        <color name="yellow">#FFFF00</color>
+        <color name="teal_700">#FF018786</color>
+        <color name="color_1">#AD1457</color>
+        <color name="purple">#8692f7</color>
+        <color name="darkgreen">#006400</color>
+        <color name="brightYellow">#FFEA00</color>
+        <color name="blazingorange">#FF6700</color>
+        <color name="mahogany">#C04000</color>
+         <color name="gold">#B8AA92</color>
+
+
+        <color name="colorPrimary">#1F5BF3</color>
+        <color name="colorPrimaryDark">#0947E8</color>
+        <color name="colorAccent">#00A5FF</color>
+        <color name="navyBlue">#000080</color>
+
+        <!--colors for modern ui-->
+        <color name="whiteTextColor">#fff</color>
+        <color name="primaryTextColor">#2661FA</color>
+        <color name="loginBkColor">#f0f0f0</color>
+
+        <!--colros for card-->
+        <color name="whiteCardColor">#fff</color>
+        <color name="advansyellow">#ffcc00</color>
+        <color name="advanslemon">#bfc700</color>
+        <color name="advanslightgreen">#94c023</color>
+        <color name="advansdarkgreen">#59a72f</color>
+        <color name="advanspuregreen">#009534</color>
+        <color name="advansgrey">#666665</color>
+    </resources>
